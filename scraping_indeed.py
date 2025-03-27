@@ -2,6 +2,7 @@ import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 import time
 import csv
+import send_email
 
 def scrap():
     url = "https://br.indeed.com/jobs?q=desenvolvedor+java&l=remoto&fromage=7"
@@ -53,3 +54,4 @@ def request(url):
 
 if __name__ == "__main__":
     scrap()
+    send_email.main()
